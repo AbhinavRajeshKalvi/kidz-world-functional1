@@ -1,272 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kidz World</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <!-- Navigation bar -->
-    <nav class="flex space-between">
-      <div>
-        <img src="./assets/kw-logo.png" alt="" />
-      </div>
-      <div id="cart" class="flex">
-        <img src="./assets/cart-icon.png" alt="" />
-        <p>Cart items (<span id="cart-value">0</span>)</p>
-      </div>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- NavBar Starts -->
+    <nav>
+        <div>
+            <img src="./assets/kw-logo.png" alt="logo" id="logo">
+        </div>
+        <div id="nav-right">
+            <img src="./assets/cart-icon.png" alt="cart" id="cart-1">
+            <div id="nav-right-text">
+                <span>Cart items</span><span id="cart-items">(0)</span>
+            </div>
+        </div>
     </nav>
-    <!-- Header section -->
+<!-- NavBar ends -->
+
+<!-- Header Starts -->
     <header>
-      <div class="flex header-text">
-        <h1>Shop.</h1>
-        <h1>Have Fun.</h1>
-        <h1>Repeat.</h1>
-        <h5>#NewAndNow</h5>
-      </div>
+        <div id="header-text">
+            <h1>
+                Shop. <br>
+                Have Fun. <br>
+                Repeat. <br>
+            </h1>
+            <p id="header-little">#NewAndNow</p>
+        </div>
     </header>
-    <!-- Books section -->
-    <div class="section-container flex">
-      <div class="section">
-        <h2>Discover New Books</h2>
-        <div class="container flex space-between">
-          <div>
-            <div>
-              <img class="books" src="./assets/book1.png" alt="" />
-              <h3>This was our pact</h3>
-              <h4>Ryan Andrews</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$7.49</p>
-              <div id="book1" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img
-                class="books"
-                src="http://i1.faceprep.in/prograd-junior/book2.png"
-                alt=""
-              />
-              <h3>The famous five</h3>
-              <h4>Guid Blyton</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$4.59</p>
-              <div id="book2" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img class="books" src="./assets/book3.png" alt="" />
-              <h3>Matlida</h3>
-              <h4>Roald Dahl</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$6.80</p>
-              <div id="book3" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img
-                class="books"
-                src="http://i1.faceprep.in/prograd-junior/book4.png"
-                alt=""
-              />
-              <h3>Harry Potter</h3>
-              <h4>JK Rowling</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$10</p>
-              <div id="book4" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img class="books" src="./assets/book5.png" alt="" />
-              <h3>For Young Readers</h3>
-              <h4>Ruskin Bond</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$7.29</p>
-              <div id="book5" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img class="books" src="./assets/book6.png" alt="" />
-              <h3>Wimpy Kid - DIY</h3>
-              <h4>Jeff Kinney</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$4.99</p>
-              <div id="book6" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<!-- Header ends -->
 
-      <!-- game section -->
-      <div class="section">
-        <h2>Discover New Games</h2>
-        <div class="container flex space-between">
-          <div>
-            <div>
-              <img class="games" src="./assets/dart-board.png" alt="" />
-              <h3>Dart Board</h3>
-              <h4>Wooden board, 16 inches</h4>
+<!-- Product section starts -->
+    <div id="main">
+    <!-- Books section starts -->
+    <div>
+        <h3>Discover New Books</h3>
+        <div class="content">
+            <!-- Book1 -->
+            <div class="item">
+                <img src="./assets/book1.png" alt="This was our pact">
+                <h4>This was our pact</h4>
+                <h6>Ryan Andrews</h6>
+                <div class="price">
+                    <h4>$7.49</h4>
+                    <button id="add-button">Add <img src="./assets/cart-icon-white.png" alt="cart-icon"></button>
+                </div>
             </div>
-            <div class="buy flex space-between">
-              <p>$17.49</p>
-              <div id="game1" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
+            <!-- Book 2 -->
+            <div class="item">
+                <img src="./assets/book2.png" alt="">
+                <h4>The famous five</h4>
+                <h6>Guid Blyton</h6>
+                <div class="price">
+                    <h4>$4.59</h4>
+                    <button id="add-button">Add <img src="./assets/cart-icon-white.png" alt="cart-icon"></button>
+                </div>
             </div>
-          </div>
-          <div>
-            <div>
-              <img class="games" src="./assets/connect-four.png" alt="" />
-              <h3>Connect 4</h3>
-              <h4>Board game, multiplayer</h4>
+            <!-- Book 3 -->
+            <div class="item">
+                <img src="./assets/book3.png" alt="">
+                <h4>Matilda</h4>
+                <h6>Roald Dahl</h6>
+                <div class="price">
+                    <h4>$6.60</h4>
+                    <button id="add-button">Add <img src="./assets/cart-icon-white.png" alt="cart-icon"></button>
+                </div>
             </div>
-            <div class="buy flex space-between">
-              <p>$19.99</p>
-              <div id="game2" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
+            <!-- Book 4 -->
+            <div class="item">
+                <img src="./assets/book4.png" alt="">
+                <h4>Harry Potter</h4>
+                <h6>JK Rowling</h6>
+                <div class="price">
+                    <h4>$10</h4>
+                    <button id="add-button">Add <img src="./assets/cart-icon-white.png" alt="cart-icon"></button>
+                </div>
             </div>
-          </div>
-          <div>
-            <div>
-              <img class="games" src="./assets/jenga.png" alt="" />
-              <h3>Jenga</h3>
-              <h4>Wooden blocks, 54 pieces</h4>
+            <!-- Book 5 -->
+            <div class="item">
+                <img src="./assets/book5.png" alt="">
+                <h4>For Young Readers</h4>
+                <h6>Ruskin Bond</h6>
+                <div class="price">
+                    <h4>$7.29</h4>
+                    <button id="add-button">Add <img src="./assets/cart-icon-white.png" alt="cart-icon"></button>
+                </div>
             </div>
-            <div class="buy flex space-between">
-              <p>$20.99</p>
-              <div id="game3" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
+            <!-- Book 6 -->
+            <div class="item">
+                <img src="./assets/book6.png" alt="">
+                <h4>Wimpy Kid - DIY</h4>
+                <h6>Jeff Kinneys</h6>
+                <div class="price">
+                    <h4>$4.99</h4>
+                    <button id="add-button">Add <img src="./assets/cart-icon-white.png" alt="cart-icon"></button>
+                </div>
             </div>
-          </div>
-          <div>
-            <div>
-              <img class="games" src="./assets/monopoly.png" alt="" />
-              <h3>Monopoly</h3>
-              <h4>1.61 x 15.75 x 10.51 inches</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$19.49</p>
-              <div id="game4" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <!-- Craft section -->
-      <div class="section">
-        <h2>Handmade with love</h2>
-        <div class="container flex space-between">
-          <div>
-            <div>
-              <img class="crafts" src="./assets/bookmarks.png" alt="" />
-              <h3>Bookmarks</h3>
-              <h4>Handmade with love</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$12.49</p>
-              <div id="craft1" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img class="crafts" src="./assets/birthday-card.png" alt="" />
-              <h3>Birthday card</h3>
-              <h4>Handmade with love</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$19.99</p>
-              <div id="craft2" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img class="crafts" src="./assets/stuffed-toy.png" alt="" />
-              <h3>Stuffed toys</h3>
-              <h4>Handmade with love</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$15.99</p>
-              <div id="craft3" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img class="crafts" src="./assets/dream-catcher.png" alt="" />
-              <h3>Dream catcher drawing</h3>
-              <h4>Handmade with love</h4>
-            </div>
-            <div class="buy flex space-between">
-              <p>$18.49</p>
-              <div id="craft4" class="button flex space-evenly">
-                <h6>Add</h6>
-                <img src="./assets/cart-icon-white.png" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+    <!-- Books Section ends -->
 
-    <!-- Footer section -->
-    <footer class="flex space-between">
-      <div>
-        <h2>Brought to you by</h2>
-        <img src="./assets/krishti.png" alt="" />
-      </div>
-      <div class="flex" id="details">
-        <h3>Krishti</h3>
-        <p>Made with love ♥️ by Kalvian</p>
-        <p>Talk to me at kristi@gmail.com</p>
-      </div>
+    <!-- Games Section starts -->
+    <div>
+        <h3>Discover New Games</h3>
+        <div class="content">
+            <!-- Game 1 -->
+            <div class="item">
+                <img src="./assets/dart-board.png" alt="dart-board">
+                <h4>Dart Board</h4>
+                <h6>Wooden board, 16 inches</h6>
+                <div class="price">
+                    <h4>$17.49</h4>
+                    <button id="add-button">Add <img src="./assets/cart-icon-white.png" alt="cart-icon"></button>
+                </div>
+            </div>
+            <!-- Game 2 -->
+            <div class="item">
+                <img src="./assets/connect-four.png" alt="connect-four">
+                <h4>Connect 4</h4>
+                <h6>Board game, multiplayer</h6>
+                <div class="price">
+                    <h4>$19.99</h4>
+                    <button id="add-button">Add <img src="./assets/cart-icon-white.png" alt="cart-icon"></button>
+                </div>
+            </div>
+            <!-- Game 3 -->
+            <div class="item">
+                <img src="./assets/jenga.png" alt="jenga">
+                <h4>Jenga</h4>
+                <h6>Wooden blocks, 54 pieces</h6>
+                <div class="price">
+                    <h4>$20.99</h4>
+                    <button id="add-button">Add <img src="./assets/cart-icon-white.png" alt="cart-icon"></button>
+                </div>
+            </div>
+            <!-- Game 4 -->
+            <div class="item">
+                <img src="./assets/monopoly.png" alt="monopoly">
+                <h4>Monopoly</h4>
+                <h6>1.61 x 15.75 x 10.51 inches</h6>
+                <div class="price">
+                    <h4>$19.49</h4>
+                    <button id="add-button">Add <img src="./assets/cart-icon-white.png" alt="cart-icon"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Game Section Ends  -->
+
+    <!-- Handmade Section starts -->
+    <div>
+        <h3>Handmade with love</h3>
+        <div class="content">
+            <div class="item">
+                <img src="./assets/bookmarks.png" alt="bookmarks">
+                <h4>Bookmarks</h4>
+                <h6>Handmade with love</h6>
+                <div class="price">
+                    <h4>$12.49</h4>
+                    <button id="add-button">Add <img src="./assets/cart-icon-white.png" alt="cart-icon"></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assets/birthday-card.png" alt="birthday-card">
+                <h4>Birthday card</h4>
+                <h6>Handmade with love</h6>
+                <div class="price">
+                    <h4>$19.99</h4>
+                    <button id="add-button">Add <img src="./assets/cart-icon-white.png" alt="cart-icon"></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assets/stuffed-toy.png" alt="stuffed-toy">
+                <h4>Stuffed toys</h4>
+                <h6>Handmade with love</h6>
+                <div class="price">
+                    <h4>$15.99</h4>
+                    <button id="add-button">Add <img src="./assets/cart-icon-white.png" alt="cart-icon"></button>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assets/dream-catcher.png" alt="dream-catcher">
+                <h4>Dream catcher drawing</h4>
+                <h6>Handmade with love</h6>
+                <div class="price">
+                    <h4>$18.49</h4>
+                    <button id="add-button">Add <img src="./assets/cart-icon-white.png" alt="cart-icon"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- handmade section ends -->
+    </div>
+<!-- Product section ends  -->
+
+<!-- Footer Starts -->
+    <footer>
+        <div id="footer-left">
+            <h3>Brought to you by</h3>
+            <img src="./assets/krishti.png" alt="krishti">
+        </div>
+        <div id="footer-right">
+            <h4>Krishti</h4>
+            <h5>
+                Made with love ❤️ by Kalvian <br>
+                Talk to me at <a href="mailto:kristi@gmail.com">kristi@gmail.com</a>
+            </h5>
+        </div>
     </footer>
-
-    <script src="./app.js"></script>
-  </body>
+<!-- Footer ends -->
+<script src="./app.js"></script>
+</body>
 </html>
